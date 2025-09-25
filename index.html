@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/general.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="card-container">
+        <div class="rating-container">
+          <div class="star-icon">
+            <img src="assets/images/icon-star.svg" alt="" draggable="false" />
+          </div>
+
+          <div class="card-wrapper">
+            <h1 class="text-preset-1 card-title">How did we do?</h1>
+
+            <p class="text-preset-4 card-description">
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+
+            <div class="radio-container">
+              <div class="radio-btn-wrapper">
+                <input type="radio" name="rating" id="rating-1" value="1" />
+                <label for="rating-1" class="radio-label text-preset-3"
+                  >1</label
+                >
+              </div>
+
+              <div class="radio-btn-wrapper">
+                <input type="radio" name="rating" id="rating-2" value="2" />
+                <label for="rating-2" class="radio-label text-preset-3"
+                  >2</label
+                >
+              </div>
+
+              <div class="radio-btn-wrapper">
+                <input type="radio" name="rating" id="rating-3" value="3" />
+                <label for="rating-3" class="radio-label text-preset-3"
+                  >3</label
+                >
+              </div>
+
+              <div class="radio-btn-wrapper">
+                <input type="radio" name="rating" id="rating-4" value="4" />
+                <label for="rating-4" class="radio-label text-preset-3"
+                  >4</label
+                >
+              </div>
+
+              <div class="radio-btn-wrapper">
+                <input type="radio" name="rating" id="rating-5" value="5" />
+                <label for="rating-5" class="radio-label text-preset-3"
+                  >5</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <button class="text-preset-5-semi-bold submit-btn" disabled>
+            Submit
+          </button>
+        </div>
+
+        <div class="result-container">
+          <img
+            src="assets/images/illustration-thank-you.svg"
+            alt=""
+            draggable="false"
+          />
+
+          <div class="selected-container">
+            <p class="text-preset-4">
+              You selected <span id="chosen-rating">0</span> out of 5
+            </p>
+          </div>
+
+          <div class="thanks-container">
+            <h1 class="text-preset-1 card-title">Thank you!</h1>
+
+            <p class="text-preset-4 card-description">
+              We appreciate you taking the time to give a rating. If you ever
+              need more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
