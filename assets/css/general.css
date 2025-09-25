@@ -40,8 +40,6 @@
 
 .text-preset-3 {
   font-size: 1rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.2px;
   font-weight: 700;
 }
 
@@ -93,8 +91,6 @@
 
   .text-preset-3 {
     font-size: 0.875rem;
-    line-height: 1.125rem;
-    letter-spacing: 1.87px;
   }
 }
 
